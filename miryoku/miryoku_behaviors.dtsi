@@ -1,5 +1,9 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define TAPPING_TERM 280
 
 / {
   behaviors {
@@ -17,5 +21,35 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    hrml: hrml {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <TAPPING_TERM>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+      quick-tap-ms = <175>;                // repeat on tap-into-hold
+      require-prior-idle-ms = <150>;
+      hold-trigger-key-positions = <0 5>, <0 6>, <0 7>, <0 8>, <0 9>,
+                                   <1 5>, <1 6>, <1 7>, <1 8>, <1 9>,
+                                   <2 5>, <2 6>, <2 7>, <2 8>, <2 9>,
+                                   <3 5>, <3 6>, <3 7>, <3 8>, <3 9>;
+      hold-trigger-on-release;             // delay positional check until key-release
+    };
+    hrmr: hrmr {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <TAPPING_TERM>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+      quick-tap-ms = <175>;                // repeat on tap-into-hold
+      require-prior-idle-ms = <150>;
+      hold-trigger-key-positions = <0 0>, <0 1>, <0 2>, <0 3>, <0 4>,
+                                   <1 0>, <1 1>, <1 2>, <1 3>, <1 4>,
+                                   <2 0>, <2 1>, <2 2>, <2 3>, <2 4>,
+                                   <3 0>, <3 1>, <3 2>, <3 3>, <3 4>;
+      }
+      hold-trigger-on-release;             // delay positional check until key-release
+    };
   };
 };
+
