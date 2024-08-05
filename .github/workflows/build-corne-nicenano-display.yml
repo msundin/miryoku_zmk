@@ -13,4 +13,4 @@ jobs:
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y","CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
       branches: '["petejohanson/zmk/feat/pointers-move-scroll"]'
-      
+
