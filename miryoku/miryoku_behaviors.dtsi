@@ -1,6 +1,6 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
-#include <custom_behaviors.dtsi>
+#include "custom_behaviors.dtsi"
 
 / {
   behaviors {
