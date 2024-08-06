@@ -39,85 +39,85 @@
   };
 };
 
-/ {
-    combos {
-        // Combo for left parenthesis key
-        compatible = "zmk,combos";
-        combo_colon {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <19 20 21>;
-            bindings = <&kp COLN>;
-        };
-        combo_single_quote {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&kp SQT>;
-        };
-        combo_double_quote {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp DQT>;
-        };
-        combo_q {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&kp Q>;
-        };
-
-        combo_lbrc {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            bindings = <&kp LBRC>;
-        };
-        combo_lpar {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            bindings = <&kp LPAR>;
-        };
-        combo_lbkt {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp LBKT>;
-        };
-        combo_lt {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp LT>;
-        };
-
-        combo_rbrc {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <30 31>;
-            bindings = <&kp RBRC>;
-        };
-        combo_rpar {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp RPAR>;
-        };
-        combo_rbkt {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp RBKT>;
-        };
-        combo_gt {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <33 34>;
-            bindings = <&kp GT>;
-        };
-
-    };
-};
+// / {
+//     combos {
+//         // Combo for left parenthesis key
+//         compatible = "zmk,combos";
+//         combo_colon {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <19 20 21>;
+//             bindings = <&kp COLN>;
+//         };
+//         combo_single_quote {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <7 8>;
+//             bindings = <&kp SQT>;
+//         };
+//         combo_double_quote {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <8 9>;
+//             bindings = <&kp DQT>;
+//         };
+//         combo_q {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <2 3>;
+//             bindings = <&kp Q>;
+//         };
+//
+//         combo_lbrc {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <18 19>;
+//             bindings = <&kp LBRC>;
+//         };
+//         combo_lpar {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <19 20>;
+//             bindings = <&kp LPAR>;
+//         };
+//         combo_lbkt {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <20 21>;
+//             bindings = <&kp LBKT>;
+//         };
+//         combo_lt {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <21 22>;
+//             bindings = <&kp LT>;
+//         };
+//
+//         combo_rbrc {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <30 31>;
+//             bindings = <&kp RBRC>;
+//         };
+//         combo_rpar {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <31 32>;
+//             bindings = <&kp RPAR>;
+//         };
+//         combo_rbkt {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <32 33>;
+//             bindings = <&kp RBKT>;
+//         };
+//         combo_gt {
+//             layers = <0>;
+//             timeout-ms = <50>;
+//             key-positions = <33 34>;
+//             bindings = <&kp GT>;
+//         };
+//
+//     };
+// };
 
