@@ -40,7 +40,7 @@
         combo_parl {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp LEFT_PAREN>;
+            bindings = <&kp LPAR>;
         };
 
         // Add more combos as needed
