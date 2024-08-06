@@ -2,6 +2,8 @@
 // https://github.com/manna-harbour/miryoku
 // #include "custom_behaviors.dtsi"
 #define TAPPING_TERM 300
+#define U_HRML(MOD, TAP) &u_hrml MOD TAP
+#define U_HRMR(MOD, TAP) &u_hrmr MOD TAP
 
 / {
   behaviors {
