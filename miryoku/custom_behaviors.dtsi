@@ -36,10 +36,11 @@
 / {
     combos {
         // Combo for left parenthesis key
-        combo_enter {
+        compatible = "zmk,combos";
+        combo_parl {
             timeout-ms = <50>;
-            bindings = <&kp LEFT_PAREN>;
             key-positions = <16 17>;
+            bindings = <&kp LEFT_PAREN>;
         };
 
         // Add more combos as needed
