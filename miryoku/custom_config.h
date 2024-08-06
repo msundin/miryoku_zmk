@@ -2,7 +2,7 @@
 // https://github.com/manna-harbour/miryoku
 
 #define MIRYOKU_LAYER_BASE \
-&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
+&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SEMI, \
 U_HRML(LGUI, A),     U_HRML(LALT, R),     U_HRML(LCTRL, S),    U_HRML(LSHFT, T),    &kp G,             &kp M,             U_HRMR(LSHFT, N),    U_HRMR(LCTRL, E),    U_HRMR(LALT, I),     U_HRMR(LGUI, O), \
 U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH), \
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
