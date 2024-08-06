@@ -43,22 +43,22 @@
     combos {
         // Combo for left parenthesis key
         compatible = "zmk,combos";
-        combo_parl {
+        combo_lbrc {
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp LBRC>;
         };
-        combo_parl {
+        combo_lpar {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&kp LPAR>;
         };
-        combo_parl {
+        combo_lbkt {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp LBKT>;
         };
-        combo_parl {
+        combo_lt {
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp LT>;
