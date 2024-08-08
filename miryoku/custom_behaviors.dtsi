@@ -39,91 +39,136 @@
   };
 };
 
+/*                                      42 KEY MATRIX / LAYOUT MAPPING
+
+  ╭────────────────────────┬────────────────────────╮
+  │  0   1   2   3   4   5 │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 │ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29 │ 30  31  32  33  34  35 │
+  ╰───────────╮ 36  37  38 │ 39  40  41 ╭───────────╯
+              ╰────────────┴────────────╯               */
+
 / {
     combos {
         // Combo for left parenthesis key
         compatible = "zmk,combos";
-        combo_colon {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <19 20 21>;
-            bindings = <&kp COLN>;
-        };
-        combo_colon2 {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <7 19>;
-            bindings = <&kp COLN>;
-        };
-        combo_single_quote {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&kp SQT>;
-        };
-        combo_double_quote {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp DQT>;
-        };
+        //Left
         combo_q {
             layers = <0>;
             timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp Q>;
         };
-
+        combo_tilde {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp TILDE>;
+        };
+        combo_minus {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <4 16>;
+            bindings = <&kp MINUS>;
+        };
+        combo_underscore {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <16 28>;
+            bindings = <&kp UNDERSCORE>;
+        };
         combo_lbrc {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <16 17>;
             bindings = <&kp LBRC>;
         };
         combo_lpar {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <19 20>;
+            key-positions = <15 16>;
             bindings = <&kp LPAR>;
         };
         combo_lbkt {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <14 15>;
             bindings = <&kp LBKT>;
         };
         combo_lt {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <21 22>;
+            key-positions = <13 14>;
             bindings = <&kp LT>;
         };
-
         combo_rbrc {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <30 31>;
+            key-positions = <28 29>;
             bindings = <&kp RBRC>;
         };
         combo_rpar {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <27 28>;
             bindings = <&kp RPAR>;
         };
         combo_rbkt {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <26 27>;
             bindings = <&kp RBKT>;
         };
         combo_gt {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <25 26>;
             bindings = <&kp GT>;
         };
 
+        // RIGHT
+        combo_pipe {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <7 19>;
+            bindings = <&kp PIPE>;
+        };
+        combo_backslash {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <19 31>;
+            bindings = <&kp BSLH>;
+        };
+        combo_double_quote {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp DQT>;
+        };
+        combo_colon {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp COLON>;
+        };
+        combo_single_quote {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp SQT>;
+        };
+        combo_grave {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp DQT>;
+        };
+        combo_forward_slash {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp FSLH>;
+        };
     };
 };
 
