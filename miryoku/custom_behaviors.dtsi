@@ -127,17 +127,17 @@
         };
 
         // RIGHT
-        combo_pipe {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <7 19>;
-            bindings = <&kp PIPE>;
-        };
         combo_backslash {
             layers = <0>;
             timeout-ms = <50>;
-            key-positions = <19 31>;
+            key-positions = <7 19>;
             bindings = <&kp BSLH>;
+        };
+        combo_pipe {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <19 31>;
+            bindings = <&kp PIPE>;
         };
         combo_double_quote {
             layers = <0>;
@@ -157,17 +157,17 @@
             key-positions = <31 32>;
             bindings = <&kp SQT>;
         };
-        combo_grave {
-            layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp DQT>;
-        };
         combo_forward_slash {
             layers = <0>;
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp FSLH>;
+        };
+        combo_grave {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp GRAVE>;
         };
     };
 };
