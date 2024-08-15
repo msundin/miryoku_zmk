@@ -163,6 +163,12 @@
             key-positions = <20 21>;
             bindings = <&kp FSLH>;
         };
+        combo_shift_space {
+            layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <19 20 21>;
+            bindings = <&kp LG(LS(SPC))>;
+        };
         combo_grave {
             layers = <0>;
             timeout-ms = <50>;
