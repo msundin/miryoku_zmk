@@ -85,8 +85,8 @@
 
         // LEFT
         combo_caps_word {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <3 16>;
             bindings = <&caps_word>;
         };
@@ -177,10 +177,10 @@
 
         // RIGHT
         combo_num_word {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <8 19>;
-            bindings = <&num_word 7>;
+            bindings = <&num_word U_NUM>;
         };
         combo_backslash {
             layers = <0>;
