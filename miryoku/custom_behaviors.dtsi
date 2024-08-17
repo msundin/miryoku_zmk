@@ -17,18 +17,13 @@
 };
 
 / {
-    behaviors {
-      num_word: num_word {
+  behaviors {
+    num_word: num_word {
         #binding-cells = <0>;
         compatible = "zmk,behavior-num-word";
         continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         ignore-numbers;
     };
-  };
-};
-
-/ {
-  behaviors {
     u_hrml: u_hrml {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
