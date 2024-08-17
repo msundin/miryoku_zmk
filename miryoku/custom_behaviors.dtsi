@@ -1,5 +1,3 @@
-#include <behaviors/num_word.dtsi>
-
 #define TAPPING_TERM 280
 /*                                      42 KEY MATRIX / LAYOUT MAPPING
 
