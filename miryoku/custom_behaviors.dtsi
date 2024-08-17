@@ -174,12 +174,12 @@
         };
 
         // RIGHT
-        // combo_num_word {
-        //     timeout-ms = <COMBO_TERM_FAST>;
-        //     require-prior-idle-ms = <COMBO_IDLE_FAST>;
-        //     key-positions = <8 19>;
-        //     bindings = <&num_word>;
-        // };
+        combo_num_word {
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+            key-positions = <8 19>;
+            bindings = <&num_word>;
+        };
         combo_backslash {
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
