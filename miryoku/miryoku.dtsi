@@ -2,7 +2,7 @@
 // https://github.com/manna-harbour/miryoku
 
 #include <behaviors.dtsi>
-#include "dts/behaviors/num_word.dtsi"
+#include <behaviors/num_word.dtsi>
 #include <behaviors/mouse_key_press.dtsi>
 #if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
   #include <behaviors/mouse_move.dtsi>
