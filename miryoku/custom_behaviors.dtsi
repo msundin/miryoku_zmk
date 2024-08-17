@@ -28,12 +28,12 @@
     caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
     };
-    num_word: num_word {
-        #binding-cells = <0>;
-        compatible = "zmk,behavior-num-word";
-        continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-        ignore-numbers;
-    };
+    // num_word: num_word {
+    //     #binding-cells = <0>;
+    //     compatible = "zmk,behavior-num-word";
+    //     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+    //     ignore-numbers;
+    // };
     u_hrml: u_hrml {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -72,6 +72,7 @@
     combos {
         // Combo for left parenthesis key
         compatible = "zmk,combos";
+
         // LEFT
         combo_caps_word {
             timeout-ms = <COMBO_TERM_FAST>;
@@ -165,12 +166,12 @@
         };
 
         // RIGHT
-        combo_num_word {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-            key-positions = <8 19>;
-            bindings = <&num_word>;
-        };
+        // combo_num_word {
+        //     timeout-ms = <COMBO_TERM_FAST>;
+        //     require-prior-idle-ms = <COMBO_IDLE_FAST>;
+        //     key-positions = <8 19>;
+        //     bindings = <&num_word>;
+        // };
         combo_backslash {
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
