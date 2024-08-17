@@ -24,6 +24,10 @@
 
 / {
   behaviors {
+    /* Let Caps Word continue when typing Underscore */
+    caps_word {
+        continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+    };
     num_word: num_word {
         #binding-cells = <0>;
         compatible = "zmk,behavior-num-word";
@@ -68,7 +72,6 @@
     combos {
         // Combo for left parenthesis key
         compatible = "zmk,combos";
-
         // LEFT
         combo_caps_word {
             timeout-ms = <COMBO_TERM_FAST>;
