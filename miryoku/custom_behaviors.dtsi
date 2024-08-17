@@ -1,3 +1,5 @@
+#include <behaviors/num_word.dtsi>
+
 #define TAPPING_TERM 280
 /*                                      42 KEY MATRIX / LAYOUT MAPPING
 
@@ -174,12 +176,12 @@
         };
 
         // RIGHT
-        // combo_num_word {
-        //     timeout-ms = <COMBO_TERM_FAST>;
-        //     require-prior-idle-ms = <COMBO_IDLE_FAST>;
-        //     key-positions = <8 19>;
-        //     bindings = <&num_word 7>;
-        // };
+        combo_num_word {
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+            key-positions = <8 19>;
+            bindings = <&num_word 7>;
+        };
         combo_backslash {
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
