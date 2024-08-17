@@ -28,6 +28,14 @@
     caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
     };
+    num_word: behavior_num_word {
+      compatible = "zmk,behavior-caps-word";
+      label = "NUM_WORD";
+      #binding-cells = <0>;
+      layers = <U_NUM>;                                // insert location of numbers layer here
+      continue-list = <BACKSPACE DELETE DOT COMMA>;  // adjust as desired
+      ignore-numbers;                                // numbers don't deactivate the layer
+    };
     // num_word: num_word {
     //     #binding-cells = <0>;
     //     compatible = "zmk,behavior-num-word";
