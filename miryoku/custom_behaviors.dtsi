@@ -28,7 +28,7 @@
     caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
     };
-    num_word: behavior_num_word {
+    // num_word: behavior_num_word {
     //   compatible = "zmk,behavior-caps-word";
     //   label = "NUM_WORD";
     //   #binding-cells = <0>;
