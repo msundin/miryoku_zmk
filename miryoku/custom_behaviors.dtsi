@@ -1,4 +1,4 @@
-#include <behaviors/num_word.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 #define TAPPING_TERM 280
 /*                                      42 KEY MATRIX / LAYOUT MAPPING
@@ -29,6 +29,13 @@
     /* Let Caps Word continue when typing Underscore */
     caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+    };
+    new_num_word: new_num_word {
+        #binding-cells = <0>;
+        compatible = "zmk,behavior-num-word";
+        layers = <7>;
+        continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+        ignore-numbers;
     };
     // num_word: behavior_num_word {
     //   compatible = "zmk,behavior-caps-word";
@@ -180,7 +187,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             require-prior-idle-ms = <COMBO_IDLE_FAST>;
             key-positions = <8 19>;
-            bindings = <&num_word>;
+            bindings = <&new_num_word>;
         };
         combo_backslash {
             layers = <0>;
