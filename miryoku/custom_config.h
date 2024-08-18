@@ -27,7 +27,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_LAYER_NUM \
 &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          &kp FSLH,          &kp ASTRK,         &kp MINUS,         &kp PLUS,          U_BOOT,            \
-&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         ESC,               &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         &kp ESC,           &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &U_NA,             &kp COMMA,         &kp DOT,           U_NA,              \
 U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
