@@ -25,3 +25,9 @@ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA
 U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        U_EP_TOG,\
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_STOP,        &kp C_PP,          &kp C_MUTE,        U_NP,              U_NP
 
+#define MIRYOKU_LAYER_NUM \
+&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          &kp FSLH,          &kp ASTRK,         &kp MINUS,         &kp PLUS,          U_BOOT,            \
+&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         ESC,               &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &U_NA,             &kp COMMA,         &kp DOT,           U_NA,              \
+U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
