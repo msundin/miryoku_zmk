@@ -20,30 +20,12 @@
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
-// &caps_word {
-//     continue-list = <UNDERSCORE MINUS BSPC DEL>;
-// };
-
 / {
   behaviors {
     /* Let Caps Word continue when typing Underscore */
     caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
     };
-    // num_word: behavior_num_word {
-    //   compatible = "zmk,behavior-caps-word";
-    //   label = "NUM_WORD";
-    //   #binding-cells = <0>;
-    //   layers = <U_NUM>;                                // insert location of numbers layer here
-    //   continue-list = <BACKSPACE DELETE DOT COMMA>;  // adjust as desired
-    //   ignore-numbers;                                // numbers don't deactivate the layer
-    // };
-    // num_word: num_word {
-    //     #binding-cells = <0>;
-    //     compatible = "zmk,behavior-num-word";
-    //     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-    //     ignore-numbers;
-    // };
     u_hrml: u_hrml {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -105,7 +87,7 @@
             bindings = <&kp TILDE>;
         };
         combo_minus {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <4 16>;
@@ -126,7 +108,7 @@
             bindings = <&kp LBRC>;
         };
         combo_lpar {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <15 16>;
@@ -140,7 +122,7 @@
             bindings = <&kp LBKT>;
         };
         combo_lt {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <13 14>;
@@ -154,7 +136,7 @@
             bindings = <&kp RBRC>;
         };
         combo_rpar {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <27 28>;
@@ -168,7 +150,7 @@
             bindings = <&kp RBKT>;
         };
         combo_gt {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <25 26>;
@@ -204,7 +186,7 @@
             bindings = <&kp DQT>;
         };
         combo_colon {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <19 20>;
@@ -218,13 +200,13 @@
             bindings = <&kp SQT>;
         };
         combo_forward_slash {
-            layers = <0>;
+            layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <20 21>;
             bindings = <&kp FSLH>;
         };
-        combo_shift_space {
+        combo_gui_shift_space {
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
