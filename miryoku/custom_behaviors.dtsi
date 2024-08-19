@@ -188,7 +188,6 @@
         combo_semi_colon {
             layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <18 19>;
             bindings = <&kp SEMI>;
         };
