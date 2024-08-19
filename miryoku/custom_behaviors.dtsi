@@ -216,7 +216,6 @@
         combo_gui_shift_space {
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <19 20 21>;
             bindings = <&kp LG(LS(SPC))>;
         };
