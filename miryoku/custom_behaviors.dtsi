@@ -162,7 +162,7 @@
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <21 20 19>;
+            key-positions = <19 20 21>;
             bindings = <&kp LS(LG(SPC))>;
         };
         combo_num_word {
@@ -192,19 +192,19 @@
             key-positions = <7 8>;
             bindings = <&kp DQT>;
         };
-        combo_semi_colon {
-            layers = <0 7>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <18 19>;
-            bindings = <&kp SEMI>;
-        };
         combo_colon {
             layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <19 20>;
             bindings = <&kp COLON>;
+        };
+        combo_semi_colon {
+            layers = <0 7>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <30 31>;
+            bindings = <&kp SEMI>;
         };
         combo_single_quote {
             layers = <0>;
