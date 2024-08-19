@@ -203,7 +203,7 @@
             layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <30 31>;
+            key-positions = <8 9>;
             bindings = <&kp SEMI>;
         };
         combo_single_quote {
