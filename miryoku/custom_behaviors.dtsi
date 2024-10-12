@@ -192,19 +192,26 @@
             key-positions = <7 8>;
             bindings = <&kp DQT>;
         };
+        combo_exclamation {
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <8 9>;
+            bindings = <&kp EXCL>;
+        };
+        combo_semi_colon {
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <18 19>;
+            bindings = <&kp SEMI>;
+        };
         combo_colon {
             layers = <0 7>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <19 20>;
             bindings = <&kp COLON>;
-        };
-        combo_semi_colon {
-            layers = <0 7>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <8 9>;
-            bindings = <&kp SEMI>;
         };
         combo_single_quote {
             layers = <0>;
