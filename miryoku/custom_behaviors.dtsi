@@ -162,7 +162,7 @@
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <19 20 21>;
+            key-positions = <21 20 19>;
             bindings = <&kp LS(LG(SPC))>;
         };
         combo_num_word {
