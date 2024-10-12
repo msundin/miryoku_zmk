@@ -7,7 +7,7 @@ U_HRML(LGUI, A), U_HRML(LALT, R), U_HRML(LCTRL, S), U_HRML(LSHFT, T),       &kp 
 U_LT(U_BUTTON, Z), U_HRML(RALT, X),   &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA, U_HRMR(RALT, DOT), U_LT(U_BUTTON, QMARK),\
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
-#define MIRYOKU_LAYER_NAV \
+#define MIRYOKU_LAYER_NAV \oken
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LS(H),         &kp LS(J),         &kp LS(K),         &kp LS(L),         U_NP,\
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_CUT,             &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         U_CPY,\
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           U_PST,\
@@ -22,7 +22,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_LAYER_MEDIA \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &u_out_tog,        &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,\
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_RGB_TOG,         &kp RA(W),         &kp RA(Q),         &kp RA(P),         U_RGB_BRI,\
-U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        U_EP_TOG,\
+U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        U_NA,\
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_STOP,        &kp C_PP,          &kp C_MUTE,        U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
