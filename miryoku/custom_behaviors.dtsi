@@ -160,12 +160,14 @@
 
         // RIGHT 
         combo_caps_word {
+            layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <8 19>;
             bindings = <&caps_word>;
         };
         combo_num_word {
+            layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <20 31>;
