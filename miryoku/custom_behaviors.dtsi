@@ -21,7 +21,7 @@
 
 #define TAPPING_TERM 280
 #define QUICK_TAP 175
-#define PRIOR_IDLE 100
+#define PRIOR_IDLE 50
 
 / {
   behaviors {
