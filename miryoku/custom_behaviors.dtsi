@@ -1,6 +1,5 @@
 #include <behaviors/num_word.dtsi>
 
-#define TAPPING_TERM 280
 /*                                      42 KEY MATRIX / LAYOUT MAPPING
 
   ╭────────────────────────┬────────────────────────╮
@@ -20,6 +19,10 @@
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
+#define TAPPING_TERM 280
+#define QUICK_TAP 175
+#define PRIOR_IDLE 100
+
 / {
   behaviors {
     /* Let Caps Word continue when typing Underscore */
@@ -32,8 +35,8 @@
       tapping-term-ms = <TAPPING_TERM>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
-      quick-tap-ms = <175>;                // repeat on tap-into-hold
-      require-prior-idle-ms = <140>;
+      quick-tap-ms = <QUICK_TAP>;                // repeat on tap-into-hold
+      require-prior-idle-ms = <PRIOR_IDLE>;
       hold-trigger-key-positions = <KEYS_R THUMBS>;
       hold-trigger-on-release;             // delay positional check until key-release
     };
@@ -43,8 +46,8 @@
       tapping-term-ms = <TAPPING_TERM>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
-      quick-tap-ms = <175>;                // repeat on tap-into-hold
-      require-prior-idle-ms = <140>;
+      quick-tap-ms = <QUICK_TAP>;                // repeat on tap-into-hold
+      require-prior-idle-ms = <PRIOR_IDLE>;
       hold-trigger-key-positions = <KEYS_L THUMBS>;
       hold-trigger-on-release;             // delay positional check until key-release
     };
