@@ -38,6 +38,7 @@
       quick-tap-ms = <QUICK_TAP>;                // repeat on tap-into-hold
       require-prior-idle-ms = <PRIOR_IDLE>;
       hold-trigger-key-positions = <KEYS_R THUMBS>;
+      hold-trigger-on-release;             // delay positional check until key-release
     };
     u_hrmr: u_hrmr {
       compatible = "zmk,behavior-hold-tap";
@@ -48,6 +49,7 @@
       quick-tap-ms = <QUICK_TAP>;                // repeat on tap-into-hold
       require-prior-idle-ms = <PRIOR_IDLE>;
       hold-trigger-key-positions = <KEYS_L THUMBS>;
+      hold-trigger-on-release;             // delay positional check until key-release
     };
   };
 };
