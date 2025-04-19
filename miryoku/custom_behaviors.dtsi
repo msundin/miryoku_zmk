@@ -178,14 +178,14 @@
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <7 19>;
+            key-positions = <19 31>;
             bindings = <&kp BSLH>;
         };
         combo_pipe {
             layers = <0>;
             timeout-ms = <COMBO_TERM_SLOW>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <19 31>;
+            key-positions = <7 19>;
             bindings = <&kp PIPE>;
         };
         combo_double_quote {
